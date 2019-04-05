@@ -114,3 +114,9 @@
 > `$ docker-compose rm`
 >
 > `$ docker-compose up -d`
+
+## Docker-machine
+
+### Create a docker machine for vbox
+
+> `$ docker-machine create --driver=virtualbox vbox-default`

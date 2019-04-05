@@ -1,0 +1,26 @@
+version: '3'
+services:
+  ruby:
+    build: ./ruby
+    container_name: ruby
+    volumes: 
+      - $PWD:/app
+    tty: true
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment: 
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - PMA_HOST=${PMA_HOST}
+  # $ docker-compose up -d ruby mysql phpadmin
