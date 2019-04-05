@@ -99,10 +99,18 @@
 
 ## Dockerfile
 
-### Build Docker image from parent
+### Build Docker container using a dockerfile
 
 > `$ docker build -t [image-name] [Dokerfile-path]`
 
     For example:
     $ docker build -t python-flask .
     $ docker run --name flask-demo -p 5000:5000 python-flask
+
+## Docker-compose
+
+### Build containers using a docker-compose file
+
+> `$ docker-compose rm`
+>
+> `$ docker-compose up -d`
