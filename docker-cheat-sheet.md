@@ -124,3 +124,15 @@
 > `$ docker-machine env vbox-default`
 >
 > `$ docker-machine ls`
+
+## Kubernates
+
+### Create a kubernate
+
+> `$ minikube start`
+>
+> `$ kubectl run nginx --image=nginx`
+>
+> `$ kubectl get pods`
+>
+> `$ kubectl get deployments`
