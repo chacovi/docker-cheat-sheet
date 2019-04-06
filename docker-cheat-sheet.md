@@ -120,3 +120,7 @@
 ### Create a docker machine for vbox
 
 > `$ docker-machine create --driver=virtualbox vbox-default`
+>
+> `$ docker-machine env vbox-default`
+>
+> `$ docker-machine ls`
