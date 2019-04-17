@@ -1,4 +1,4 @@
-# Docker cheat sheet
+# Docker Cheat-Sheet
 
 ## Docker CLI
 
